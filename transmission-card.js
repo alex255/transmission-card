@@ -185,7 +185,7 @@ class TransmissionCard extends LitElement {
         </div>
       </div>
       <div class="torrent_details">${torrent.percent} %</div>
-      <div class="torrent_details">${torrent.eta}</div>
+      <div class="torrent_timeleft">${torrent.eta}</div>
     </div>
     `
   }
@@ -418,6 +418,11 @@ class TransmissionCard extends LitElement {
     }
     .torrent_details {
       font-size: 0.7em;
+    }
+    .torrent_timeleft
+    {
+      font-size: 0.7em;
+      float: right;
     }
     `;
   }
