@@ -184,8 +184,10 @@ class TransmissionCard extends LitElement {
         <div class="${torrent.state} progressin" style="width:${torrent.percent}%">
         </div>
       </div>
-      <div class="torrent_details">${torrent.percent} %</div>
-      <div class="torrent_timeleft">${torrent.eta}</div>
+      <div class="torrent_details">
+        <div class="torrent_percentage">${torrent.percent} %</div>
+        <div class="torrent_timeleft">${torrent.eta}</div>
+      </div>
     </div>
     `
   }
@@ -421,7 +423,6 @@ class TransmissionCard extends LitElement {
     }
     .torrent_timeleft
     {
-      font-size: 0.7em;
       float: right;
     }
     `;
